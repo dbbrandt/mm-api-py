@@ -4,7 +4,7 @@ from mlmmapi import check_answer
 from flask import jsonify
 
 @app.route('/')
-@app.route('/index')
+@app.route('/mm-api-py')
 def index():
     answer = request.args.get('answer')
     correct_answer = request.args.get('correct')
